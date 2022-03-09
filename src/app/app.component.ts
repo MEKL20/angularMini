@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-challange';
+  username = "tes"
+
+  isLogin = false
+
+  login(){
+    if (this.isLogin){
+      this.isLogin = false
+    }
+    else {
+      this.isLogin = true
+    }
+  }
 }
