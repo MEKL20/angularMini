@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-child-validation',
@@ -11,5 +12,28 @@ export class ChildValidationComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  projects = [
+    {
+      hobi: 'Gaming',
+    },
+    {
+      hobi: 'Musik',
+    },
+    {
+      hobi: 'Olahraga',
+    },
+    {
+      hobi: 'Membaca',
+    },
+    {
+      hobi: 'Menari',
+    },
+  ];
+
+  form_select_all = new FormGroup({
+    project: new FormControl(this.projects),
+  });
+
+
 
 }
