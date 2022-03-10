@@ -1,1 +1,13 @@
-<div class="mt-2"><app-parent></app-parent></div>
+<!-- <div class="mt-2"><app-parent></app-parent></div> -->
+<div class="container">
+    <a routerLinkActive="active" 
+       routerLink="/home">Home</a> |
+
+    <a routerLinkActive="active" 
+       routerLink="/login">Login</a> |
+
+    <a routerLinkActive="active" 
+       routerLink="/register">register</a>
+      
+    <router-outlet></router-outlet>
+  </div>

@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "8efcb2e7-e992-40b8-982c-8ed2ebf727a6"
+    "analytics": "c43b398b-ca76-4fbf-a17b-486d309a6c7f"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-challange": {
+    "router1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-challange",
+            "outputPath": "dist/router1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-challange:build:production"
+              "browserTarget": "router1:build:production"
             },
             "development": {
-              "browserTarget": "angular-challange:build:development"
+              "browserTarget": "router1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-challange:build"
+            "browserTarget": "router1:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "angular-challange"
+  "defaultProject": "router1"
 }

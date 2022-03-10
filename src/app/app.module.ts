@@ -12,15 +12,25 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
     ChildValidationComponent,
-    ParentComponent
+    ParentComponent,
+    RegisterComponent,
+    LoginComponent,
+    HomeComponent,
+    DashboardComponent
   ],
   imports: [
+    BrowserModule,
+    AppRoutingModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
